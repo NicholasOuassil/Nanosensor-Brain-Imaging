@@ -11,7 +11,7 @@ Nanosensor-Brain-Imaging is a suite of MATLAB code designed specifically for pro
 1.  Download the nanosensor_brain_imaging package, unpack and add it to your MATLAB path.
     * Remember to update to the latest version of the software to ensure optimal results
 
-2. Open MATLAB and navigate to the `nanosensor_brain_imaging` folder.
+2. Open MATLAB and navigate to the `Nanosensor-Brain-Imaging` folder.
 
 3. Open the GUI by running the `nanosensor_imaging_GUI.m` file
 
