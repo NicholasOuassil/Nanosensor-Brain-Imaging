@@ -17,6 +17,46 @@ Nanosensor-Brain-Imaging is a suite of MATLAB code designed specifically for pro
 
 
 The result should look like this: ![opening the gui result](readme_images/opening_the_GUI_result.png)  <br>
+
+### Processing Videos
+
+1. Define filetype (SPE or TIF)
+    * TIF should be checked by default
+    * Landry Lab standard is TIF
+    
+2. Click on ***Load Stack*** button and select the your file of choice.
+    * This should be the same filetype as you selected
+    * A file browser window should open
+    At this point your interface should look something like this after the file loads: ![Load Stack Result](readme_images/load_stack_result.png)
+
+3. Select Parameters for Regions of Interest (ROI)
+    * Set the ***Frame Rate*** of your video 
+        * Landry Lab standard is 8.33 Hz (default setting)
+    * Set ***Threshold Level*** 
+        * Values below this number of  % Change in fluorescence will be ignored.
+    * Adjust ***Struct Elmnt Size*** and ***IMopen Repeats*** to desired values
+        * Description to come 
+    *  **Optional:** If Grid ROIs are desired set ***Grid ROI Size***
+        * As noted, the unit of this is pixels. The numerical value imputed will be the size of each grid. 
+        * Be careful at low values the image looks like a soup of colors 
+    * **Note:** At this point nothing should change with the central graph
+    
+4. Click ***Generate ROI Mask*** or ***Generate ROI Grid*** depending on desired mask generation method.
+    * **Note:** This may take a few seconds
+    * ROI Mask ![ROI Mask Result](readme_images/ROI_mask_result.png)
+    *  ROI Grid ![ROI Grid Result](readme_images/ROI_grid_result.png)
+    
+5. **Optional:**  Save or Load ROI Mask by clicking their respective buttons
+    * Save will output a `.mat` file
+    * Despite name this function works with both the Grid and Mask ROI Techniques    
+
+6. Click ***Process File***
+    * The result should look like this. ![Process File Result](readme_images/process_file_result.png)
+   
+<br>
+
+**Note:** Batch Process is for individual images rather than a video. 
+
 More tutorial details to follow!
 
 ---
