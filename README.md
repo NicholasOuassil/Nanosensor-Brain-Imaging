@@ -57,6 +57,65 @@ The result should look like this: ![opening the gui result](readme_images/openin
 
 **Note:** Batch Process is for individual images rather than a video. 
 
+### Understanding Your Data
+At this point, the data has been processed and now one can proceed to calculate values of interest. 
+Such as dF/F or decay constants. As buttons are clicked in the center panel the graphs above will 
+update to show the desired results. <Br>
+
+**Before Beginning:** Enter Stimulation Frame Number in the text box
+
+**Optional:** Click ***Load Data*** and load in your `.mat` file of previous data
+
+**Note:** Some of these calculations may take a few seconds. 
+
+* Finding the dF/F of a particular ROI
+    * Click the ROI number in the ***Select ROI*** list
+    * This should place the ROI overlayed image on the left graph and dF/F vs Time(s) on the center graph
+* "Heat Map" of ROIs
+    * Click ***Color ROIs by Peak dF/F***
+    * Heat Map will appear on the right graph
+    * Example Heat Map for a ROI Grid: ![ROI Grid Heat Map](readme_images/ROI_Grid_heatmap.png)
+* Identification of Transients
+    * Click ***Classify Transients*** 
+    * Helpful to identify release events in one's data
+    * Two Curves will be generated 
+        * Middle Graph: dF/F [for each ROI] vs Time (s) 
+        * Right Graph: ROI# vs Time (s)
+    * Example: ![Classify Transients](readme_images/classify_transients.png)
+* Calculating an average dF/F
+    * Click ***Plot Average dF/F Trace*** 
+    * Result will yield a graph [dF/F vs Time (s)] on the central figure with an average decay constant (Tau)
+    * Example: <br> ![Average dF/F Trace](readme_images/avg_dff_trace.png)
+* Individual dF/F traces
+    * Click ***Stack dF/F Traces***
+    * Will result in a graph on the central figure [dF/F vs Time (s)] with all traces drawn and a line for stimulation time
+* Identification of Decay Constants
+    * Click  ***Calculate Decay Constants***
+    * Result will plot:
+        * Middle Graph: dF/F vs Time (s) for all ROIs
+        * Right Graph: A histogram of all decay constants found calculated for each ROI
+    * Example: ![Calculate Decay Constants](readme_images/calculate_decay_constants.png)
+* Plotting Decay Constants on Your Video
+    * Click ***Color ROI by Decay Constant*** 
+    * Each of the decay constants will be calculated and a heat map will be generated on the right panel
+* Showing all ROIs with Numbers
+    * Click ***Show all ROIs*** 
+    * Result: All ROIs will be displayed in varying colors and be numbered.     
+* Getting Rid of Outliers
+    * If any ROIs seem to be nonsensical, the ROI can be removed by selecting its number under ***Select ROI*** then clicking ***Delete Selected ROI***
+    
+### Saving Your Data
+After you have calculated any values that you're interested in, it is now time to save your data!
+
+1. Click ***Export Data to Workspace*** in the top left corner of the GUI
+2. Navigate to the main MATLAB window and look at the workspace
+3. Right Click on `currentDataset` and select ***Save As*** then follow the prompts.
+    * Current Dataset should be noted as a *1x1 struct*
+    * This file should be saved as a `.mat` file
+4. Explore your data in MATLAB by double clicking on `currentDataset`
+    * Double Clicking on any field that has a value in blue will open a spreadsheet with that data
+
+
 More tutorial details to follow!
 
 ---
