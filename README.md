@@ -105,8 +105,10 @@ update to show the desired results. <Br>
     * If any ROIs seem to be nonsensical, the ROI can be removed by selecting its number under ***Select ROI*** then clicking ***Delete Selected ROI***
     
 ### Saving Your Data
-After you have calculated any values that you're interested in, it is now time to save your data!
+While you were performing your data analysis, the program has already saved your data as `video_filename.mat` file in the same folder that your video file was in.
 
+
+While this process should always work, you can save the data via the workspace as follows.
 1. Click ***Export Data to Workspace*** in the top left corner of the GUI
 2. Navigate to the main MATLAB window and look at the workspace
 3. Right Click on `currentDataset` and select ***Save As*** then follow the prompts.
@@ -114,6 +116,8 @@ After you have calculated any values that you're interested in, it is now time t
     * This file should be saved as a `.mat` file
 4. Explore your data in MATLAB by double clicking on `currentDataset`
     * Double Clicking on any field that has a value in blue will open a spreadsheet with that data
+
+Once you have your data in the workspace you can directly play with your data by clicking on the file of interest.
 
 
 More tutorial details to follow!
