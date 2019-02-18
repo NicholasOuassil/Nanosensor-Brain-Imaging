@@ -1,5 +1,5 @@
 function [handles,transientIndex]=classifyTransients(handles,dFF)
-%Trying degative transient noise estimation
+%Trying negative transient noise estimation
 
 frameRate = handles.DataSet.frameRate;
 
