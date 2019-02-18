@@ -132,7 +132,7 @@ Following thresholding, the program draws and numbers a grid based on the ROI Gr
 
 ---
 
-###Export Data to Workspace
+### Export Data to Workspace
 * **Requires:** Video File (see Load Stack) 
 * **Clears:** currentDataset *struct*
 * **Copies:** `handles.DataSet` to `currentDataset` in the workspace 
