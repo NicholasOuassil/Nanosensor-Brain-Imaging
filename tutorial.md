@@ -2,7 +2,7 @@
 This is the tutorial for learning how to use the Nanosensor-Brain-Imaging package for MATLAB. This tutorial will bring you from
  the import of data through analysis of your data. 
  
-##Opening the Interface
+## Opening the Interface
 1.  Download the nanosensor_brain_imaging package, unpack and add it to your MATLAB path.
     * Remember to update to the latest version of the software to ensure optimal results
 
@@ -70,7 +70,7 @@ update to show the desired results. <Br>
 * "Heat Map" of ROIs
     * Click ***Color ROIs by Peak dF/F***
     * Heat Map will appear on the right graph
-    * Example Heat Map for a ROI Grid: ![ROI Grid Heat Map](tutorial_images/ROI_Grid_heatmap.png)
+    * Example Heat Map for a ROI Grid: ![ROI Grid Heat Map](tutorial_images/ROI_grid_heatmap.png)
 * Identification of Transients
     * Click ***Classify Transients*** 
     * Helpful to identify release events in one's data
